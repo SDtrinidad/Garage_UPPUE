@@ -1,4 +1,4 @@
-module top_garage(
+module tt_um_garage(
 	input rst, btn, ob, SA, SAB, clk, 
 	output MS, MB
 	);
