@@ -25,7 +25,7 @@ Then it activates the downward motor (MB).
 If it detects sensor SAB, the cycle ends.
 If it detects an obstruction (ob), it enters a safety state and stops the system.
 
-![Uploading WhatsApp Image 2026-04-22 at 12.48.19 PM.jpeg…]()
+![](WhatsApp Image 2026-04-22 at 12.48.19 PM.jpeg)
 
 
 ## How to test
