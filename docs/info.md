@@ -11,12 +11,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 The project implements a finite state machine (FSM) that controls the behavior of an automatic garage door opener. The system changes state with each clock pulse (clk) and can be reset with the rst signal, returning to its initial state.
 The operation is based on the following inputs:
-b (button)
-SA and SAB (position sensors)
-ob (obstruction)
+b (button): al presionar el boton, sube, baja o detiene la puerta.
+SA and SAB (position sensors):Cuando detecten ya sea arriba o abajo, los motores se detienen.
+ob (obstruction):cuando este se hace presente, la puerta se detiene por un momento y despues sube.
 Depending on the current state and the inputs, the system determines the next state and activates the outputs:
-MS (upward motor)
-MB (downward motor)
+MS (upward motor):Es el encargado de subir la puerta.
+MB (downward motor):Es el encargado de bajar la puerta.
 The general flow is:
 At rest, it waits for the button to be pressed.
 It activates the upward motor (MS) until it detects sensor SA.
@@ -36,13 +36,7 @@ ob to simulate an obstruction.
 Observe the LEDs:
 MS on indicates up movement.
 MB on indicates down movement.
-External Hardware
-1 button → b (system control)
-2 switches → SA and SAB (position sensors)
-1 switch → rst (system reset)
-1 switch → ob (obstruction detection)
-1 LED → MS (indicates up motor)
-1 LED → MB (indicates down motor)
+
 
 ## External hardware
 
